@@ -6,15 +6,15 @@
   
   <title>工具链 | sisyphus的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="交叉编译是在新的架构上构建新的软件很重要的技术。 交叉编译三元组所谓三元组就是架构-设备-厂家machine-vendor-os。machine代表架构，即CPU的类型。常见的machine列表如下:|cpu|machine||—|——-||intel 64bit|x86_64或amd64||MIPS32 Big endian|mips||MIPS32 Little endian|mipsel|">
+  <meta name="description" content="交叉编译是在新的架构上构建新的软件很重要的技术。 交叉编译三元组所谓三元组就是架构-设备-厂家machine-vendor-os。machine代表架构，即CPU的类型。具体可以参照gcc installing。部分常见的machine列表如下:|cpu|machine||:—|:——-||intel 64bit|x86_64或amd64||MIPS32 Big endian|mips||MIPS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="工具链">
 <meta property="og:url" content="https://insidemountain.github.io/undefined/undefined/undefined/toolchain/index.html">
 <meta property="og:site_name" content="sisyphus的技术博客">
-<meta property="og:description" content="交叉编译是在新的架构上构建新的软件很重要的技术。 交叉编译三元组所谓三元组就是架构-设备-厂家machine-vendor-os。machine代表架构，即CPU的类型。常见的machine列表如下:|cpu|machine||—|——-||intel 64bit|x86_64或amd64||MIPS32 Big endian|mips||MIPS32 Little endian|mipsel|">
+<meta property="og:description" content="交叉编译是在新的架构上构建新的软件很重要的技术。 交叉编译三元组所谓三元组就是架构-设备-厂家machine-vendor-os。machine代表架构，即CPU的类型。具体可以参照gcc installing。部分常见的machine列表如下:|cpu|machine||:—|:——-||intel 64bit|x86_64或amd64||MIPS32 Big endian|mips||MIPS">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-03-20T13:56:00.000Z">
-<meta property="article:modified_time" content="2021-03-20T14:18:21.304Z">
+<meta property="article:modified_time" content="2021-03-20T14:22:21.110Z">
 <meta property="article:author" content="袁子瞻">
 <meta property="article:tag" content="os">
 <meta name="twitter:card" content="summary">
@@ -101,7 +101,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>交叉编译是在新的架构上构建新的软件很重要的技术。</p>
-<h2 id="交叉编译"><a href="#交叉编译" class="headerlink" title="交叉编译"></a>交叉编译</h2><h3 id="三元组"><a href="#三元组" class="headerlink" title="三元组"></a>三元组</h3><p>所谓三元组就是架构-设备-厂家<code>machine-vendor-os</code>。<code>machine</code>代表架构，即CPU的类型。常见的<code>machine</code>列表如下:<br>|cpu|machine|<br>|—|——-|<br>|intel 64bit|x86_64或amd64|<br>|MIPS32 Big endian|mips|<br>|MIPS32 Little endian|mipsel|</p>
+<h2 id="交叉编译"><a href="#交叉编译" class="headerlink" title="交叉编译"></a>交叉编译</h2><h3 id="三元组"><a href="#三元组" class="headerlink" title="三元组"></a>三元组</h3><p>所谓三元组就是架构-设备-厂家<code>machine-vendor-os</code>。<code>machine</code>代表架构，即CPU的类型。具体可以参照<a target="_blank" rel="noopener" href="https://gcc.gnu.org/install/specific.html">gcc installing</a>。部分常见的<code>machine</code>列表如下:<br>|cpu|machine|<br>|:—|:——-|<br>|intel 64bit|x86_64或amd64|<br>|MIPS32 Big endian|mips|<br>|MIPS32 Little endian|mipsel|</p>
 <h3 id="build-host-target"><a href="#build-host-target" class="headerlink" title="build, host, target"></a>build, host, target</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -118,7 +118,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/toolchain/" data-id="ckmhtgxhh000468tybmt87gl3" data-title="工具链" class="article-share-link">Share</a>
+      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/toolchain/" data-id="ckmhtm5dv0006glty6q0kdv2j" data-title="工具链" class="article-share-link">Share</a>
       
       
       
