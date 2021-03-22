@@ -71,14 +71,14 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-rust" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-verilog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/undefined/undefined/undefined/rust/" class="article-date">
+    <a href="/undefined/undefined/undefined/verilog/" class="article-date">
   <time class="dt-published" datetime="2021-03-20T13:56:00.000Z" itemprop="datePublished">2021-03-20</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Rust/">Rust</a>
+    <a class="article-category-link" href="/categories/verilog/">verilog</a>
   </div>
 
   </div>
@@ -89,7 +89,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/undefined/undefined/undefined/rust/">rust</a>
+      <a class="p-name article-title" href="/undefined/undefined/undefined/verilog/">verilog</a>
     </h1>
   
 
@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/rust/" data-id="ckmksxnur000iw8tyh3f1hh4y" data-title="rust" class="article-share-link">Share</a>
+      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/verilog/" data-id="ckmksz2c4000szsty9q66ekyv" data-title="verilog" class="article-share-link">Share</a>
       
       
       
@@ -169,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/security/" data-id="ckmksxnut000lw8ty6ahlerno" data-title="安全" class="article-share-link">Share</a>
+      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/security/" data-id="ckmksz2bz000mzstyaxe968a3" data-title="安全" class="article-share-link">Share</a>
       
       
       
@@ -181,14 +181,14 @@
 
 
   
-    <article id="post-c++" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-sed" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/undefined/undefined/undefined/c++/" class="article-date">
+    <a href="/undefined/undefined/undefined/sed/" class="article-date">
   <time class="dt-published" datetime="2021-03-20T13:56:00.000Z" itemprop="datePublished">2021-03-20</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/C/">C++</a>
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>►<a class="article-category-link" href="/categories/Linux/%E5%B8%B8%E7%94%A8linux%E5%91%BD%E4%BB%A4/">常用linux命令</a>
   </div>
 
   </div>
@@ -199,7 +199,60 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/undefined/undefined/undefined/c++/">c++</a>
+      <a class="p-name article-title" href="/undefined/undefined/undefined/sed/">sed</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>sed命令的用途以及常见用法。</p>
+<h2 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h2><h3 id="基础用途"><a href="#基础用途" class="headerlink" title="基础用途"></a>基础用途</h3><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><h3 id="奇技淫巧"><a href="#奇技淫巧" class="headerlink" title="奇技淫巧"></a>奇技淫巧</h3><ol>
+<li><p>@, &amp;的用法<br><code>sed -e &#39;s@/lib\(64\)\?\(32\)\?/ld@/tools&amp;@g&#39; -e &#39;s@/usr@/tools@g&#39; $file.orig &gt; $file</code><br>sed最常用的分隔符是<code>\</code>，其余还可以有<code>|, @, `, !</code>，这里用的是@，而&amp;符号代表源的所有的内容，这里的结果就然后第一个<code>sed</code>表达式在每个「/lib/ld」,<br>「/lib64/ld」或者「/lib32/ld」实例前面增加「/tools」。</p>
+</li>
+<li><p><code>sed -e &#39;/m64=/s/lib64/lib/&#39; -i.orig gcc/config/i386/t-linux64</code><br>这里有两个点：</p>
+</li>
+<li><p>m64=放在s前面，可以类似于m64=.****lib64改成m64=.*lib其中.*不变。  </p>
+</li>
+<li><p>-i.orig代表要修改文件可以加orig后缀。<br>但神奇的是这个命令一次只改了一个文件，执行两次，t-linux64和t-linux64.orig才都被修改了。</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/sed/" data-id="ckmksz2c0000nzstygfjvdy1b" data-title="sed" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-rust" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/undefined/undefined/undefined/rust/" class="article-date">
+  <time class="dt-published" datetime="2021-03-20T13:56:00.000Z" itemprop="datePublished">2021-03-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Rust/">Rust</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/undefined/undefined/undefined/rust/">rust</a>
     </h1>
   
 
@@ -224,7 +277,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/c++/" data-id="ckmksxnu80000w8ty19ci7oo4" data-title="c++" class="article-share-link">Share</a>
+      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/rust/" data-id="ckmksz2c1000pzstyamzkgyx0" data-title="rust" class="article-share-link">Share</a>
       
       
       
@@ -337,7 +390,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/toolchain/" data-id="ckmksxnuv000pw8tyajrbcd5u" data-title="工具链" class="article-share-link">Share</a>
+      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/toolchain/" data-id="ckmksz2c4000rzstydywkbb1f" data-title="工具链" class="article-share-link">Share</a>
       
       
       
@@ -351,14 +404,14 @@
 
 
   
-    <article id="post-sed" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-os" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/undefined/undefined/undefined/sed/" class="article-date">
+    <a href="/undefined/undefined/undefined/os/" class="article-date">
   <time class="dt-published" datetime="2021-03-20T13:56:00.000Z" itemprop="datePublished">2021-03-20</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>►<a class="article-category-link" href="/categories/Linux/%E5%B8%B8%E7%94%A8linux%E5%91%BD%E4%BB%A4/">常用linux命令</a>
+    <a class="article-category-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>
   </div>
 
   </div>
@@ -369,60 +422,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/undefined/undefined/undefined/sed/">sed</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>sed命令的用途以及常见用法。</p>
-<h2 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h2><h3 id="基础用途"><a href="#基础用途" class="headerlink" title="基础用途"></a>基础用途</h3><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><h3 id="奇技淫巧"><a href="#奇技淫巧" class="headerlink" title="奇技淫巧"></a>奇技淫巧</h3><ol>
-<li><p>@, &amp;的用法<br><code>sed -e &#39;s@/lib\(64\)\?\(32\)\?/ld@/tools&amp;@g&#39; -e &#39;s@/usr@/tools@g&#39; $file.orig &gt; $file</code><br>sed最常用的分隔符是<code>\</code>，其余还可以有<code>|, @, `, !</code>，这里用的是@，而&amp;符号代表源的所有的内容，这里的结果就然后第一个<code>sed</code>表达式在每个「/lib/ld」,<br>「/lib64/ld」或者「/lib32/ld」实例前面增加「/tools」。</p>
-</li>
-<li><p><code>sed -e &#39;/m64=/s/lib64/lib/&#39; -i.orig gcc/config/i386/t-linux64</code><br>这里有两个点：</p>
-</li>
-<li><p>m64=放在s前面，可以类似于m64=.****lib64改成m64=.*lib其中.*不变。  </p>
-</li>
-<li><p>-i.orig代表要修改文件可以加orig后缀。<br>但神奇的是这个命令一次只改了一个文件，执行两次，t-linux64和t-linux64.orig才都被修改了。</p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/sed/" data-id="ckmksxnuw000qw8tyg58wds64" data-title="sed" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-verilog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/undefined/undefined/undefined/verilog/" class="article-date">
-  <time class="dt-published" datetime="2021-03-20T13:56:00.000Z" itemprop="datePublished">2021-03-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/verilog/">verilog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/undefined/undefined/undefined/verilog/">verilog</a>
+      <a class="p-name article-title" href="/undefined/undefined/undefined/os/">OS</a>
     </h1>
   
 
@@ -447,7 +447,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/verilog/" data-id="ckmksxnv0000sw8tyav1wg8v1" data-title="verilog" class="article-share-link">Share</a>
+      <a data-url="https://insidemountain.github.io/undefined/undefined/undefined/os/" data-id="ckmksz2bw000fzstyabhu542a" data-title="OS" class="article-share-link">Share</a>
       
       
       
@@ -524,15 +524,15 @@
           </li>
         
           <li>
-            <a href="/undefined/undefined/undefined/os/">OS</a>
+            <a href="/undefined/undefined/undefined/c++/">c++</a>
           </li>
         
           <li>
-            <a href="/undefined/undefined/undefined/compiler/">compiler</a>
+            <a href="/undefined/undefined/undefined/database/">database</a>
           </li>
         
           <li>
-            <a href="/undefined/undefined/undefined/hash/">hash</a>
+            <a href="/undefined/undefined/undefined/golang/">golang</a>
           </li>
         
       </ul>
